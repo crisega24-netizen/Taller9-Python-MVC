@@ -7,3 +7,4 @@ objModelo = Numero()
 objVista = VistaFormulario()
 
 objControlador = Controlador(objVista, objModelo)
+objControlador.hacerPregunta()
