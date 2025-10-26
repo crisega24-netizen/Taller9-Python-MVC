@@ -10,7 +10,17 @@ class Numero:
         
     def validarPar(self):
         if self.numero % 2 == 0:
-            mensaje = "El número es par"
+            paridad = "par"
         else:
-            mensaje = "El número es impar"
+            paridad = "impar"
+        
+        
+        if self.numero > 0:
+            signo = "positivo"
+        elif self.numero < 0:
+            signo = "negativo"
+        else:
+            signo = "neutro"
+        
+        mensaje = f"El número {self.numero} es {paridad} y {signo}."
         return mensaje
